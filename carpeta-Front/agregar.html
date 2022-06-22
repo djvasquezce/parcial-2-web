@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <nav class="d-flex justify-content-around bg-dark py-4">
+      <h4 class="text-white">PAGINA AGREGAR</h4>
+      <div>
+        <a class="btn btn-primary" href="mostrar.html" role="button">Ir a Mostrar</a>
+      </div>
+    </nav>
+
+    <section class="container mx-auto p-5">
+      <form action="" class="p-5 bg-light border border-dark rounded-lg">
+        <h1 class="d-flex justify-content-center">Agregar Paises</h1>
+        <div class="form-group">
+          <label for="idPais">Identificador del país</label>
+          <input type="text" class="form-control" id="idPais" placeholder="1, xf2, ..." />
+        </div>
+
+        <div class="form-group">
+          <label for="nombre">Nombre del país</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Colombia, México, ..." />
+        </div>
+
+        <div class="form-group">
+          <label for="capital">Capital:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Bogotá, Tunja, ..." />
+        </div>
+
+        <div class="form-group">
+          <label for="idioma">Idioma oficial:</label>
+          <input type="text" class="form-control" id="idioma" placeholder="Español, Inglés, ..." />
+        </div>
+
+        <div class="form-group">
+          <label for="población">Población:</label>
+          <input onchange="validarPoblacion()" type="number" class="form-control" id="poblacion" placeholder="1400000, ..." />
+        </div>
+        <div class="d-flex justify-content-center">
+          <button id="boton-agregar" type="submit" class="btn btn-primary" disabled>Agregar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+  <script src="validaciones.js"></script>
+</html>
